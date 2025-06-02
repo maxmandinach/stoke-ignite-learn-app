@@ -11,7 +11,7 @@ const Logo: React.FC<LogoProps> = ({ className = '', showText = true }) => {
     <div className={`flex items-center space-x-2 ${className}`}>
       {/* Icon - stylized flame/spark */}
       <div className="relative">
-        <div className="w-8 h-8 bg-gradient-to-tr from-orange-500 to-red-500 rounded-lg transform rotate-45 flex items-center justify-center">
+        <div className="w-8 h-8 bg-gradient-to-tr from-blue-500 to-blue-600 rounded-lg transform rotate-45 flex items-center justify-center">
           <div className="w-3 h-3 bg-white rounded-sm transform -rotate-45"></div>
         </div>
       </div>
