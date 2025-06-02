@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from './ui/design-system';
+import Logo from './Logo';
 
 interface HeaderProps {
   title?: string;
@@ -28,12 +29,12 @@ const Header: React.FC<HeaderProps> = ({ title, showBack, onBack, rightAction })
               </Button>
             )}
             
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
-                Stoke
-              </h1>
+            <div className="flex items-center space-x-3">
+              <Logo showText={!title} />
               {title && (
-                <p className="text-sm text-gray-600 -mt-0.5">{title}</p>
+                <div>
+                  <p className="text-lg font-semibold text-gray-900">{title}</p>
+                </div>
               )}
             </div>
           </div>
